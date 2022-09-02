@@ -3,17 +3,13 @@ const { solve } = require(path)
 
 const examples = `
 
-1
-2 3
-test
+example
 ------
-6 test
+answer
 ======
-72
-128 256
-myonmyon
+example
 ------
-456 myonmyon
+answer
 
 `.trim()
 

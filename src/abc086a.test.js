@@ -3,17 +3,13 @@ const { solve } = require(path)
 
 const examples = `
 
-1
-2 3
-test
+3 4
 ------
-6 test
+Even
 ======
-72
-128 256
-myonmyon
+1 21
 ------
-456 myonmyon
+Odd
 
 `.trim()
 
