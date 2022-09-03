@@ -9,7 +9,7 @@ watch('./src', { persistent: true }).on('change', path => {
   const js = path.replace(/\..+$/, '.js');
   const yml = path.replace(/\..+$/, '.yml');
 
-  const examples = load(readFileSync(yml));
+  const examples = load(readFileSync(yml)).slice(1);
 
   let i = 0;
   let failed = 0;
