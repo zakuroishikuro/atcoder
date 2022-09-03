@@ -40,3 +40,11 @@
   - `+'12nyan'` -> NaN
   - `parseInt("12nyan")` -> 12
 - 文字列から数値: `''+n`
+
+# 入力
+
+- 標準入力をいったんinputに全て読み込む `const input = require('fs').readFileSync(0, 'utf8').trim()`
+- 行ごとに分ける必要があるとき: `input.split(/\n/)`
+- 行ごとに分ける必要がないとき: `input.split(/\s+/)`
+- 1行目は全体の行数が書いてあることが多く、使用しないので無視: `input.split(/\s+/).slice(1)`
+- 全て数値にする: `input.split(/\s+/).slice(1).map(s => +s)`
