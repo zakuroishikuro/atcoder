@@ -18,7 +18,7 @@ nvm use 12
 node --version #v12.16.1
 ```
 
-テストにjestとかavaとか使おうかと思ったけどv12で動くバージョン探すのめんどかったのでやめた
+jestとかava使いたかったけどv12で動くバージョン探すのめんどかったのでやめた
 
 でもこっちのほうがいいっぽい -> https://github.com/online-judge-tools/oj
 
