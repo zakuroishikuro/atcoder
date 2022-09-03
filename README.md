@@ -37,3 +37,5 @@ FILE_NAMEを省略した場合は `probrem` になる
 
 `src`フォルダの保存したスクリプトを自動実行する
 ymlの内容がスクリプトの標準入力に流し込まれる
+
+`console.log`は使えないのでVSCodeのJavaScript Debug Terminalで頑張ること
