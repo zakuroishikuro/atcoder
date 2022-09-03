@@ -1,6 +1,6 @@
-input = require('fs').readFileSync(0, 'utf8').trim();
+console.log(main(require('fs').readFileSync(0, 'utf8').trim()));
 
-[a, b, c, s] = input.trim().split(/\s+/);
-output = `${+a + +b + +c} ${s}`;
-
-console.log(output);
+function main(input) {
+  const [a, b, c, s] = input.trim().split(/\s+/);
+  return `${+a + +b + +c} ${s}`;
+}
