@@ -2,6 +2,7 @@
     3 4
   output: |
     Even
+    
 - input: |
     1 21
   output: |
