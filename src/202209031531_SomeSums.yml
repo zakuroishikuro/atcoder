@@ -1,0 +1,17 @@
+- title: ABC083B - Some Sums
+  url: https://atcoder.jp/contests/abs/tasks/abc083_b
+
+- input: |
+    20 2 5
+  output: |
+    84
+
+- input: |
+    10 1 2
+  output: |
+    13
+
+- input: |
+    100 4 16
+  output: |
+    4554
