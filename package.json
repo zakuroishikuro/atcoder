@@ -4,14 +4,10 @@
   "author": "zakuroishikuro",
   "license": "MIT",
   "dependencies": {
-    "@types/jest": "^29.0.0",
-    "jest": "^29.0.1",
-    "prettier": "^2.7.1"
+    "chokidar": "^3.5.3",
+    "js-yaml": "^4.1.0"
   },
   "scripts": {
-    "test": "jest",
-    "watch": "jest --watch",
-    "new": "new.js"
+    "watch": "node watch.js"
   }
 }
-

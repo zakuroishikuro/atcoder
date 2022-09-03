@@ -1,9 +1,5 @@
-const solve = input => {
-  return 'answer'
-}
+input = require('fs').readFileSync(0, 'utf8').trim();
 
-if (module.id != '.') {
-  module.exports = { solve }
-} else {
-  console.log(solve(require('fs').readFileSync(0, 'utf8')))
-}
+output = input.split(/\n/)[0];
+
+console.log(output);

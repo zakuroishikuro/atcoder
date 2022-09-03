@@ -1,2 +1,1 @@
-const int = n => +n
-
+const num = n => +n;

@@ -1,0 +1,13 @@
+- input: |
+    1
+    2 3
+    test
+  output: |
+    6 test
+
+- input: |
+    72
+    128 256
+    myonmyon
+  output: |
+    456 myonmyon

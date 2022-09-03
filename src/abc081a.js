@@ -1,9 +1,5 @@
-const solve = input => {
-  return input.replace(/[^1]/g, '').length
-}
+input = require('fs').readFileSync(0, 'utf8').trim();
 
-if (module.id != '.') {
-  module.exports = { solve }
-} else {
-  console.log(solve(require('fs').readFileSync(0, 'utf8')))
-}
+output = input.replace(/[^1]/g, '').length
+
+console.log(output);

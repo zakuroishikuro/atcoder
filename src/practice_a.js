@@ -1,10 +1,6 @@
-const solve = input => {
-  const [a, b, c, s] = input.trim().split(/\s+/)
-  return `${+a + +b + +c} ${s}`
-}
+input = require('fs').readFileSync(0, 'utf8').trim();
 
-if (module.id != '.') {
-  module.exports = { solve }
-} else {
-  console.log(solve(require('fs').readFileSync(0, 'utf8')))
-}
+[a, b, c, s] = input.trim().split(/\s+/);
+output = `${+a + +b + +c} ${s}`;
+
+console.log(output);
