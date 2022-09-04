@@ -19,6 +19,8 @@ watch('./src', { persistent: true }).on('change', path => {
   let i = 0;
   let failedCount = 0;
   for (let { input, output: expected } of examples) {
+    const startTime = Date.now();
+
     input = input.trim();
     expected = [expected].flat().map(e => e.trim());
 
@@ -35,7 +37,7 @@ watch('./src', { persistent: true }).on('change', path => {
       } else {
         process.stdout.write(green('o'));
       }
-      console.log(` actual:[`, actual, `] expected:`, expected);
+      console.log(` [${Date.now() - startTime}ms] actual:[`, actual, `] expected:`, expected);
       if (failed) console.log(red(`--- input: \n${input}\n`));
       if (++i == examples.length) {
         if (failedCount == 0) {
@@ -52,7 +54,7 @@ watch('./src', { persistent: true }).on('change', path => {
     stdin.end();
 
     const tleTimer = setTimeout(() => {
-      console.log(red(`x Time Limit Exceeded:\n--- input: \n${input}\n`));
+      console.log(red(`x [${Date.now() - startTime}ms] Time Limit Exceeded:\n--- input: \n${input}\n`));
       child.kill();
     }, TLE_MS);
   }
