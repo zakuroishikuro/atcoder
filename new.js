@@ -1,6 +1,6 @@
 const { copyFile } = require('fs');
 const time = new Date().toISOString().split(/\D/).slice(0, -3).join('');
-const input = (process.argv[2] || 'problem').replace(/\W+/g, '');
+const input = (process.argv.slice(2).join("") || 'problem').replace(/\W+/g, '');
 const name = `${time}_${input}`;
 
 const js = [`src/_template.js`, `src/${name}.js`];

@@ -3,6 +3,9 @@ const { watch } = require('chokidar');
 const { load } = require('js-yaml');
 const { readFileSync } = require('fs');
 
+const red = str => '\x1b[31m' + str + '\x1b[0m';
+const green = str => '\x1b[32m' + str + '\x1b[0m';
+
 watch('./src', { persistent: true }).on('change', path => {
   console.log(`*** file changed [${path}] ***`);
 
@@ -15,28 +18,31 @@ watch('./src', { persistent: true }).on('change', path => {
   let failed = 0;
   for (let { input, output: expected } of examples) {
     input = input.trim();
-    expected = expected.trim();
+    expected = [expected].flat().map(e => e.trim());
 
     const { stdin, stdout, stderr } = fork(js, { stdio: 'pipe' });
     stdout.setEncoding('utf8');
     stderr.setEncoding('utf8');
     stdout.on('data', actual => {
       actual = actual.trim();
-      if (actual != expected) {
-        console.log(`* failed! \n- input: \n${input}\n\n- expected: ${expected}\n- actual: ${actual}\n`);
+      if (!expected.includes(actual)) {
+        process.stdout.write(red('x'));
         failed++;
+      } else {
+        process.stdout.write(green('o'));
       }
+      console.log(` actual:`, actual, `expected:`, expected);
       if (++i == examples.length) {
         if (failed == 0) {
-          console.log('ooo all passed! ooo\n');
+          console.log(green('ooo all passed! ooo\n'));
         } else {
-          console.log(`xxx ${failed} failed xxx\n`);
+          console.log(red(`xxx ${failed} failed xxx\n`));
         }
       }
     });
     stderr.on('data', console.error);
 
-    stdin.write(input.trim());
+    stdin.write(input);
     stdin.end();
   }
 });

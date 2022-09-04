@@ -51,3 +51,9 @@
 - 行ごとに分ける必要がないとき: `input.split(/\s+/)`
 - 1行目は全体の行数が書いてあることが多く、使用しないので無視: `input.split(/\s+/).slice(1)`
 - 全て数値にする: `input.split(/\s+/).slice(1).map(s => +s)`
+
+# 配列
+
+- 重複削除
+  - `[...new Set(ary)]`
+  - `ary.filter((v,i,a)=>!a.slice(0,i).includes(v))`
