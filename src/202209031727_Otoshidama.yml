@@ -1,6 +1,10 @@
 - title: ABC085C - Otoshidama
   url: https://atcoder.jp/contests/abs/tasks/abc085_c
-  memo: TLEだったのであとで復習。回答複数あるのでwatchは失敗する
+  memo: |
+    1回目: TLEだったのであとで復習。回答複数あるのでwatchは失敗する
+    2回目: 解説読んだ。https://qiita.com/drken/items/fd4e5e3630d0f5859067#%E7%AC%AC-8-%E5%95%8F--abc-085-c---otoshidama-300-%E7%82%B9
+           最後のforはいらないなたしかに！
+
 
 - input: |
     9 45000
