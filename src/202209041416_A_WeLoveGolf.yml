@@ -1,0 +1,20 @@
+- title: A - We Love Golf
+  url: https://atcoder.jp/contests/abc165/tasks/abc165_a
+
+- input: |
+    7
+    500 600
+  output: |
+    OK
+
+- input: |
+    4
+    5 7
+  output: |
+    NG
+    
+- input: |
+    1
+    11 11
+  output: |
+    OK
