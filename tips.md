@@ -57,3 +57,8 @@
 - 重複削除
   - `[...new Set(ary)]`
   - `ary.filter((v,i,a)=>!a.slice(0,i).includes(v))`
+
+# WSL2でnpm installが遅い
+
+AtCoderと関係ないけどこれしておくべきかも
+https://qiita.com/y-uchiida/items/60aeda1a03343a503fb2
