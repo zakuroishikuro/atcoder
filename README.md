@@ -40,3 +40,5 @@ jestとか使えばいいのになぜか自分で作った
 ymlの内容がスクリプトの標準入力に流し込まれる
 
 `console.log`は使えないのでVSCodeのJavaScript Debug Terminalで頑張ること
+
+それか一旦mainでreturnしちゃっていい
