@@ -1,0 +1,1 @@
+console.log(require('fs').readFileSync(0, 'utf8').trim().split(/ /).reduce((a, b)=>a * b));

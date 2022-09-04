@@ -1,0 +1,12 @@
+- title: A - Multiplication 1
+  url: https://atcoder.jp/contests/abc169/tasks/abc169_a
+
+- input: |
+    2 5
+  output: |
+    10
+
+- input: |
+    100 100
+  output: |
+    10000
