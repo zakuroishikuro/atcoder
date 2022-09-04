@@ -1,0 +1,18 @@
+- title: B - Some Sums
+  url: https://atcoder.jp/contests/abc083/tasks/abc083_b
+  memo: さっきは文字列で1桁ずつ計算したけどこんどは数値のままやってみる
+
+- input: |
+    20 2 5
+  output: |
+    84
+
+- input: |
+    10 1 2
+  output: |
+    13
+    
+- input: |
+    100 4 16
+  output: |
+    4554
