@@ -1,6 +1,8 @@
 - title: ABC049C - 白昼夢
   url: https://atcoder.jp/contests/abs/tasks/arc065_a
-  memo: 無理だった。難しい。
+  memo: |
+    1回目: 無理だった。難しい。
+    2回目: 解説ちょっと読んで「後ろから解く」だけヒントにやり直したら一瞬だった
 
 - input: |
     erasedream
