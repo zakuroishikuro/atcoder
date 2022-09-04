@@ -9,7 +9,7 @@ function main(input) {
   return Math.min(
     ...nums.map(n => {
       let i = 0;
-      while (~(n >> i) & 1) i++;
+      while (~n >> i & 1) i++;
       return i;
     }),
   );
