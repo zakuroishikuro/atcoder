@@ -1,6 +1,9 @@
 const { copyFile } = require('fs');
+
+const norm = str => str.normalize('NFKC').replace(/[\p{P}\p{S}]+/ug, '').replace(/\s+/g, "_");
+
 const time = new Date().toISOString().split(/\D/).slice(0, -3).join('');
-const input = (process.argv.slice(2).join("") || 'problem').replace(/\W+/g, '');
+const input = norm(process.argv.slice(2).join('') || 'problem');
 const name = `${time}_${input}`;
 
 const js = [`src/_template.js`, `src/${name}.js`];
