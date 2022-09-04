@@ -1,0 +1,12 @@
+- title: A - Product
+  url: https://atcoder.jp/contests/abc086/tasks/abc086_a
+
+- input: |
+    3 4
+  output: |
+    Even
+
+- input: |
+    1 21
+  output: |
+    Odd
