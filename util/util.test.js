@@ -1,4 +1,4 @@
-const { range, sortBy } = require('./util');
+const { range, sortBy, sum, sum1toN, sumNtoM } = require('./util');
 
 test('range', () => {
   // length
@@ -14,4 +14,18 @@ test('sortBy', () => {
 
   // Descending
   expect(sortBy(['aa', 'b', 'ccc'], v => v.length, 1)).toStrictEqual(["ccc", "aa", "b"]);
+});
+
+test('sum1toN', () => {
+  // 1 ～ 100
+  const nums = range(1, 101);
+  expect(sum(nums)).toBe(5050);
+  expect(sum1toN(100)).toBe(5050);
+})
+
+test('sumNtoM', ()=>{
+  // 100 ～ 555
+  const nums = range(1, 556);
+  expect(sum(nums)).toBe(154290);
+  expect(sum1toN(555)).toBe(154290);
 });
