@@ -1,0 +1,26 @@
+- title: B - Coins
+  url: https://atcoder.jp/contests/abc087/tasks/abc087_b
+
+- input: |
+    2
+    2
+    2
+    100
+  output: |
+    2
+
+- input: |
+    5
+    1
+    0
+    150
+  output: |
+    0
+    
+- input: |
+    30
+    40
+    50
+    6000
+  output: |
+    213
