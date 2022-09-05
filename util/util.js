@@ -13,5 +13,5 @@ module.exports.sortBy = (arr, map = v => v, des = 0) => {
 
 module.exports.range = (first, last) => {
   if (!last) [first, last] = [0, first];
-  return [...(first - last)].map((_, i) => i + first);
+  return [...Array(last - first)].map((_, i) => i + first);
 };

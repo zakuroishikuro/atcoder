@@ -13,9 +13,15 @@ const min = 'util/util.min.js';
   });
 
   // 雑すぎん？
-  console.log("[minified util]")
+  console.log('[minified util]');
   let js = await readFile(min, 'utf-8');
-  js = js.replace(/}\);i\(\);}\)\(\);$/m, ";").replace(/.\.exports\./g, '\nconst ').split(/\n/).slice(1).map(s=>s.trim()).join("\n");
+  js = js
+    .replace(/}\);i\(\);}\)\(\);$/m, ';')
+    .replace(/.\.exports\./g, '\nconst ')
+    .split(/\n/)
+    .slice(1)
+    .map(s => s.trim())
+    .join('\n');
   console.log(js);
-  await writeFile(min, js, 'utf-8');
+  await writeFile(min, js + '\n', 'utf-8');
 })();
