@@ -1,0 +1,21 @@
+- title: B - Card Game for Two
+  url: https://atcoder.jp/contests/abc088/tasks/abc088_b
+  memo: ただの遊び
+
+- input: |
+    2
+    3 1
+  output: |
+    2
+
+- input: |
+    3
+    2 7 4
+  output: |
+    5
+    
+- input: |
+    4
+    20 18 2 18
+  output: |
+    18
