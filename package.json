@@ -11,7 +11,9 @@
   },
   "scripts": {
     "new": "node new.js",
-    "test": "vitest"
+    "build": "node build.js",
+    "test": "vitest",
+    "watch": "node watch.js"
   },
   "devDependencies": {
     "@types/node": "^18.7.14"
