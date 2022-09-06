@@ -1,4 +1,5 @@
-const { range, sortBy, sum, sum1toN, sumNtoM, sum1toN_step2 } = require('./util.mjs');
+import { test, expect } from 'vitest';
+import { range, sortBy, sum, sum1toN, sumNtoM, sum1toN_step2 } from './util.mjs';
 
 test('range', () => {
   // length
@@ -33,7 +34,6 @@ test('sumNtoM', () => {
   // 5..10
   expect(sum([5, 6, 7, 8, 9, 10])).toBe(45);
   expect(sumNtoM(5, 10)).toBe(45);
-
   // 100..555
   expect(sum(range(100, 556))).toBe(149340);
   expect(sumNtoM(100, 555)).toBe(149340);

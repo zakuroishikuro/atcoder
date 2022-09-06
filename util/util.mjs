@@ -17,9 +17,10 @@ export const range = (first, last = first, step = 1) => {
 };
 
 export const sum = nums => nums.reduce((a, b) => a + b);
+
 // 三角数, 等差数列の和の公式
 export const sum1toN = n => (n * (n + 1)) / 2;
-export const sumNtoM = (n, m) => (m * (m + 1)) / 2 - (n * (n + 1)) / 2;
+export const sumNtoM = (n, m) => sum1toN(m) - sum1toN(n - 1);
 
 // 四角数, 平方数
 export const sum1toN_step2 = n => Math.floor(n / 2) ** 2;
