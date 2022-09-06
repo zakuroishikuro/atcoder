@@ -1,4 +1,4 @@
-const { range, sortBy, sum, sum1toN, sumNtoM, sum1toN_step2 } = require('./util');
+const { range, sortBy, sum, sum1toN, sumNtoM, sum1toN_step2 } = require('./util.mjs');
 
 test('range', () => {
   // length

@@ -1,0 +1,10 @@
+const lines=r=>r.split(/\r?\n|\r/);
+const words=r=>r.trim().split(/\s+/);
+const ints=r=>Int32Array.from(r.trim().split(/\s+/));
+const floats=r=>Float64Array.from(r.trim().split(/\s+/));
+const sortBy=(r,o=t=>t,e=0)=>r.map(t=>[o(t),t]).sort([([t],[p])=>t-p,([t],[p])=>p-t][e]).map(t=>t[1]);
+const range=(r,o=r,e=1)=>{r=(r!=o)*r;let t=r-e;return Int32Array.from(Array(Math.floor((o-r)/e)),()=>t+=e)};
+const sum=r=>r.reduce((o,e)=>o+e);
+const sum1toN=r=>r*(r+1)/2;
+const sumNtoM=(r,o)=>o*(o+1)/2-r*(r+1)/2;
+const sum1toN_step2=r=>Math.floor(r/2)**2;

@@ -10,8 +10,9 @@ const min = 'util/util.min.js';
     outfile: min,
     bundle: true,
     minify: true,
+    target: 'es2019',
   });
-
+return
   // 雑すぎん？
   console.log('[minified util]');
   let js = await readFile(min, 'utf-8');
