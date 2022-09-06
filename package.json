@@ -11,8 +11,8 @@
   },
   "scripts": {
     "new": "node new.js",
-    "build": "node build.js",
-    "test": "vitest",
+    "build-util": "node build.mjs",
+    "test-util": "vitest",
     "watch": "node watch.js"
   },
   "devDependencies": {
