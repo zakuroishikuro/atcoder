@@ -1,0 +1,12 @@
+- title: A - Five Integers
+  url: https://atcoder.jp/contests/abc268/tasks/abc268_a
+
+- input: |
+    31 9 24 31 24
+  output: |
+    3
+
+- input: |
+    0 0 0 0 0
+  output: |
+    1

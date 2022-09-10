@@ -1,0 +1,26 @@
+- title: B - Prefix?
+  url: https://atcoder.jp/contests/abc268/tasks/abc268_b
+
+- input: |
+    atco
+    atcoder
+  output: |
+    Yes
+
+- input: |
+    code
+    atcoder
+  output: |
+    No
+    
+- input: |
+    abc
+    abc
+  output: |
+    Yes
+
+- input: |
+    aaaa
+    aa
+  output: |
+    No

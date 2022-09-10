@@ -1,0 +1,20 @@
+- title: C - Chinese Restaurant
+  url: https://atcoder.jp/contests/abc268/tasks/abc268_c
+
+- input: |
+    4
+    1 2 0 3
+  output: |
+    4
+
+- input: |
+    3
+    0 1 2
+  output: |
+    3
+    
+- input: |
+    10
+    3 9 6 1 7 2 8 0 5 4
+  output: |
+    5
