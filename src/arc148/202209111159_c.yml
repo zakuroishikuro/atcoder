@@ -1,0 +1,17 @@
+- title: xxx
+  url: http://
+
+- input: |
+    0
+  output: |
+    0
+
+- input: |
+    1
+  output: |
+    1
+    
+- input: |
+    2
+  output: |
+    2
