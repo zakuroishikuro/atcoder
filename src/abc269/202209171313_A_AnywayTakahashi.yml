@@ -1,0 +1,20 @@
+- title: xxx
+  url: http://
+
+- input: |
+    1 2 5 3
+  output: |
+    6
+    Takahashi
+
+- input: |
+    10 -20 30 -40
+  output: |
+    -700
+    Takahashi
+    
+- input: |
+    100 100 100 -100
+  output: |
+    40000
+    Takahashi
